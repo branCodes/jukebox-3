@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="player.js"></script>
     <script src="parser.js"></script>
     <script src="jukebox.js"></script>
@@ -8,13 +9,14 @@
     <h1>JukeBox</h1>
 
     <h2>Song Queue</h2>
-    <ul id="song-queue"></ul>
+    <ul id="song-queue">
+    </ul>
 
     <hr/>
 
     <form id='song-form'>
       <input type="text" placeholder="Enter a song..."/>
-      <input type="submit" value="Enqueue Song">
+      <input type="submit" id="song-form-submit-button" value="Enqueue Song">
     </form>
 
     <hr/>

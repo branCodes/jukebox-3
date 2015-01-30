@@ -11,8 +11,11 @@ $(document).ready(function() {
     });
 
     $('#play-button').on('click', function() {
-      playSong(parseSong($('li:first-child').text()),100)
+      playSong(parseSong($('li:first-child').text()),140)
+        $('li:first-child').remove()
     });
+
+
 
 });
 
